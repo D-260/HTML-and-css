@@ -5,11 +5,14 @@
     color: white;
     border: none;
     height: 36px;
+    //don't forget semi colons and don't provide any space between px and number
     width: 105px;
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
     transition: opacity 0.15s;
+    //transition implies smooth change in "opacity" as that is the required property to be changed in 0.15s which is considered as optimal time for transitions
+    // always put transition is base class and not pseduo class(used for providing more properties to class) like in 18 line
   }
 
   .subscribe-button:hover {
@@ -34,7 +37,7 @@
     cursor: pointer;
 
     transition: background-color 0.15s,
-    //
+    
       color 0.15s;
   }
 
@@ -72,6 +75,8 @@
 </button>
 
 <button class="join-button">
+  //class acts as an identifier of an element to be further used in css to be styled. for this "period(.)classname" is used in css. this period(.) is called selector
+  //of class
   JOIN
 </button>
 
